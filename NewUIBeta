@@ -123,11 +123,16 @@ function library:Rejoin()
     TeleportService:TeleportToPlaceInstance(library:GetPlaceId(), library:GetJobId(), library:GetUserId())
 end
 
-function library:Copy(input) -- only works with synapse
-    if syn then
-        syn.write_clipboard(input)
+function library:Copy(input)
+    if type(input) == "string" then
+        if syn and syn.write_clipboard then
+            syn.write_clipboard(input)
+        else
+            setclipboard(input)
+        end
     end
 end
+
 
 function library:GetDay(type)
     if type == "word" then -- day in a full word
@@ -790,7 +795,7 @@ function library:Introduction()
     text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     text.BackgroundTransparency = 1.000
     text.Position = UDim2.new(0.912751675, 0, 0, 0)
-    text.Size = UDim2.new(0, 10, 0, 21)
+    text.Size = UDim2.new(0, 26, 0, 21)
     text.Font = Enum.Font.Code
     text.Text = "xsx <3"
     text.TextColor3 = Color3.fromRGB(124, 124, 124)
