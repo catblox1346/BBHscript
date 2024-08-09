@@ -780,7 +780,7 @@ function library:Introduction()
     xsx.BackgroundTransparency = 1.000
     xsx.Size = UDim2.new(0, 100, 0, 21)
     xsx.Font = Enum.Font.Code
-    xsx.Text = "powered by basket utilities"
+    xsx.Text = "powered by basket"
     xsx.TextColor3 = Color3.fromRGB(124, 124, 124)
     xsx.TextSize = 10.000
     xsx.TextTransparency = 1
@@ -792,7 +792,7 @@ function library:Introduction()
     text.Position = UDim2.new(0.912751675, 0, 0, 0)
     text.Size = UDim2.new(0, 10, 0, 21)
     text.Font = Enum.Font.Code
-    text.Text = "credit to xsx"
+    text.Text = "xsx <3"
     text.TextColor3 = Color3.fromRGB(124, 124, 124)
     text.TextSize = 10.000
     text.TextTransparency = 1
