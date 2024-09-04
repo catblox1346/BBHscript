@@ -2078,6 +2078,11 @@ end)
                     
                             open = not open
                         end)
+
+                        function folder_data:Fold(boolean)
+                            Resize(toggle, {Rotation = (open and 0 or 90)}, options.tween_time)
+                            open, objects.Visible = boolean, boolean
+                        end
                         
                         spawn(function()
                             while true do
