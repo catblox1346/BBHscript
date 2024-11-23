@@ -5,7 +5,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/catblox1346/BBHscript/main/owo?token=$(date%20+%s)"))()
 
                                           !! Sten UI Remake !!
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/catblox1346/StensUIReMake/main/Script/StensUIRemakev1.0.0"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/catblox1346/StensUIReMake/main/Script/StensUIRemakev2.0.0"),true))()
 
 
                                             !! AutoFarm !!
